@@ -1,0 +1,240 @@
+html {
+  scroll-behavior: smooth;
+  /* Sesuaikan 80px dengan tinggi navbar Anda */
+  scroll-padding-top: 100px;
+}
+
+body {
+  overflow-x: hidden;
+  gap: 0px;
+  background-color: #f6f1e9;
+  display: flex;
+  flex-direction: column;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+header {
+  box-shadow: 2px -5px 20px rgb(0, 0, 0);
+  color: aliceblue;
+  padding: 20px;
+  display: flex;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(-135deg, #4f200d 20%, #feb21a);
+}
+header h1 {
+  animation-name: header;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+  font-size: 9em;
+}
+@keyframes header {
+  0% {
+    transform: translate(4px, 2px);
+  }
+  50% {
+    transform: translate(-4px, -2px);
+  }
+  100% {
+    transform: translate(4px, 2px);
+  }
+}
+
+.utama {
+  top: -70px;
+  padding: 20px;
+  position: absolute;
+}
+.utama p {
+  font-size: 1.4em;
+  width: 600px;
+}
+.btn {
+  background-color: #f6f6f6;
+  letter-spacing: -1px;
+  width: 200px;
+  height: 60px;
+  font-size: 1.7em;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+.btn:hover {
+  transform: scale(98%);
+  color: #f6f6f6;
+  background-color: #4f200d;
+}
+.foto {
+  animation-name: lampu;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  right: 100px;
+  transform: rotate(-30deg) scale(90%);
+}
+@keyframes lampu {
+  0% {
+    opacity: 1;
+    filter: drop-shadow(-5px -7px 100px rgb(240, 221, 2));
+  }
+  25% {
+    opacity: 1;
+    filter: drop-shadow(-5px -7px 100px rgb(240, 221, 2));
+  }
+  50% {
+    opacity: 0.5;
+    filter: none;
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(-5px -7px 100px rgb(240, 221, 2));
+  }
+}
+.cloud {
+  animation-name: geserKanan;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  right: 600px;
+}
+@keyframes geserKanan {
+  from {
+    transform: translate(900px, 140px);
+  }
+  to {
+    transform: translate(880px, 150px);
+  }
+}
+.cloud2 {
+  animation-name: geserKanan1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes geserKanan1 {
+  from {
+    transform: translate(500px, 380px) scale(300%);
+  }
+  to {
+    transform: translate(530px, 390px) scale(300%);
+  }
+}
+main {
+  padding: 100px 10px;
+}
+.info {
+  flex-wrap: wrap;
+  gap: 10px;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+article {
+  box-shadow: 2px 2px 15px rgb(0, 0, 0);
+  color: #f6f6f6;
+  position: relative;
+  animation: box 2s linear infinite;
+  border-radius: 30px;
+  padding: 30px;
+  transition: all 0.2s ease-out;
+  background: linear-gradient(to right, #ff9a00, #feb21a);
+}
+article:hover {
+  box-shadow: 2px 2px 30px rgb(0, 0, 0);
+  transform: scale(103%);
+}
+.icon {
+  justify-self: center;
+  color: aliceblue;
+  font-size: 4rem;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(-135deg, #feb21a, #4f200d);
+  position: fixed;
+  bottom: 0;
+}
+ul {
+  margin-left: -240px;
+  gap: 100px;
+  width: 500px;
+  justify-self: center;
+  display: flex;
+  list-style: none;
+  display: flex;
+}
+a {
+  font-size: 2em;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: #f6f6f6;
+  text-decoration: none;
+}
+a:hover {
+  color: #feb21a;
+  border-bottom: 2px solid #f6f6f6;
+}
+
+.main2 {
+  text-shadow: 2px 2px 20px rgb(0, 0, 0);
+  color: #f6f6f6;
+  position: relative;
+  padding: 10px 0px;
+  width: 100%;
+  height: 1100px;
+  background: linear-gradient(180deg, #f6f1e9 5%, #feb21a, #4f200d);
+}
+
+h2 {
+  animation: vidio 3s infinite;
+  margin-left: 20px;
+  font-size: 6em;
+}
+.vidgroup {
+  animation: vidio 3s infinite;
+  justify-content: space-evenly;
+  display: flex;
+}
+@keyframes vidio {
+  0% {
+    transform: translate(1px, 2px);
+  }
+  50% {
+    transform: translate(-1px, -2px);
+  }
+  100% {
+    transform: translate(1px, 2px);
+  }
+}
+.vidgroup p {
+  margin-left: -200px;
+  font-size: 1.3em;
+  width: 600px;
+}
+.main3 {
+  overflow: hidden;
+  position: relative;
+  height: 1100px;
+  width: 100%;
+  background: linear-gradient(180deg, #f6f1e9 5%, #feb21a, #4f200d);
+}
+.conectivity {
+  font-size: 2.5em;
+  justify-items: center;
+}
+.status {
+  padding: 20px;
+  width: 310px;
+  background-color: #feb21a;
+}

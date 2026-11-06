@@ -12,7 +12,7 @@ const status2 = document.querySelector(".status");
 
 let ask = Number(prompt("Masukan alamat ip mikro kontoler anda"));
 if (ask !== NaN && ask !== 0) {
-  const fix = "http://192.168.1.9/";
+  const fix = ask;
   alert("Alamat ip anda = " + ask);
   status2.textContent = "Terhubung";
   bohlam.addEventListener("click", function () {

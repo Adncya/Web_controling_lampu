@@ -1,7 +1,5 @@
 html {
   scroll-behavior: smooth;
-  /* Sesuaikan 80px dengan tinggi navbar Anda */
-  scroll-padding-top: 100px;
 }
 
 body {
@@ -69,6 +67,25 @@ header h1 {
 }
 .btn:hover {
   transform: scale(98%);
+  color: #f6f6f6;
+  background-color: #4f200d;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  letter-spacing: -1px;
+  width: 200px;
+  height: 60px;
+  font-size: 1.7em;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+button:hover {
+  box-shadow: inset 2px 2px 10px rgb(0, 0, 0);
+  transform: scale(95%);
   color: #f6f6f6;
   background-color: #4f200d;
 }
@@ -166,15 +183,13 @@ nav {
   bottom: 0;
 }
 ul {
-  margin-left: -240px;
-  gap: 100px;
   width: 500px;
-  justify-self: center;
+  justify-content: space-between;
   display: flex;
   list-style: none;
   display: flex;
 }
-a {
+ul a {
   font-size: 2em;
   letter-spacing: -1px;
   font-weight: bold;
@@ -223,6 +238,8 @@ h2 {
   width: 600px;
 }
 .main3 {
+  justify-items: center;
+  padding-bottom: 380px;
   overflow: hidden;
   position: relative;
   height: 1100px;
@@ -234,7 +251,96 @@ h2 {
   justify-items: center;
 }
 .status {
+  border-radius: 20px;
+  font-weight: bold;
   padding: 20px;
   width: 310px;
   background-color: #feb21a;
+}
+.tutor {
+  border-radius: 25px 0px 25px 0px;
+  padding: 2px;
+  margin-top: 20px;
+  justify-self: center;
+  width: 600px;
+  text-align: center;
+  background-color: #f6f1e9;
+}
+.container4 {
+  padding: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 800px;
+  width: 1800px;
+  gap: 30px;
+}
+.itemsss {
+  border-radius: 25px;
+  background: linear-gradient(130deg, #4f200d, #ff9a00);
+}
+.itemsss:last-child {
+  height: 500px;
+  grid-column: 1 / -1;
+}
+#on_off {
+  position: relative;
+  display: flex;
+}
+.fotooooo {
+  margin-left: 100px;
+  display: flex;
+}
+.fotooooo figure {
+  gap: 140px;
+  display: flex;
+}
+.led {
+  opacity: 0.5;
+  position: relative;
+  animation: lammm 5s infinite;
+  transform: scale(430%);
+  align-content: center;
+}
+
+.btn_on_off {
+  width: 280px;
+}
+.pilihan {
+  align-self: center;
+  margin-right: 100px;
+}
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  color: #4f200d;
+}
+.sensor {
+  font-size: 2em;
+}
+#otomisasi {
+  position: relative;
+  overflow: hidden;
+  gap: 20px;
+  padding: 20px;
+}
+#otomisasi h4 {
+  font-size: 2em;
+}
+#otomisasi p {
+  width: 700px;
+}
+.btn_otomisasi {
+  position: relative;
+  margin-top: 100px;
+}
+.ldr {
+  transform: translate(900px, -130px) scale(120%) rotate(50deg);
+  position: absolute;
+}
+.main3 button {
+  border: none;
+  color: #e8f9fd;
+  background-color: #ff1e00;
 }

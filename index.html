@@ -16,8 +16,9 @@
         <div class="utama" id="home">
             <h1>Welcome guys</h1>
             <hr style="width: calc(100vh - 200px);">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ratione aperiam vero quod perferendis necessitatibus, at officiis labore similique consequatur aspernatur est magni voluptatibus saepe. Labore ipsa mollitia harum molestias! </p>
-            <button class="btn">Click here</button>
+            <p>Website ini di berperan sebagai saklar digital yang di peruntukan untuk mengontrol lampu led menggunakn mikrokontroler esp32, riley, dan menggunakan protokol komunikasi HTTP.</p>
+            
+            <a href="#about"><button class="btn">More info</button></a>
         </div>
         <div class="cloud" style="transform: translate( 700px, 100px);"><img src="Download_premium_png_of_White_frame_cloud_outdoors_weather__by_Pinn_about_cloud_png__cloud__smoke_png_frame__smoke_background_png_transparent__and_png_15438285-removebg-preview.png" alt=""></div>
         <div class="foto"><img src="Light_Bulb_Png_-_Transparent_Light_Bulb_PNG_Transparent_With_Clear_Background_ID_166931___TopPNG-removebg-preview.png" alt=""></div>
@@ -28,24 +29,24 @@
         <div class="scroll">
             <div class="info">
                 <article>
-                    <div class="icon"><i class="fa-regular fa-house"></i> </div>
+                    <div class="icon"><i class="fa-solid fa-bug"></i></div>
                     <hr>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempore, quae tenetur, repellendus natus nemo nam itaque perferendis ipsa ratione, fuga praesentium et? Enim repellat accusamus iusto incidunt maiores fugit.</h3>
+                    <h3>Bahasa pemograman dan software yang saya gunkan : C++ dengan library arduino, html, css, dan js. untuk software yang saya gunakan adalah arduino IDE dan Visual Studio Code</h3>
                 </article>
                 <article>
                     <div class="icon"><i class="fa-regular fa-lightbulb"></i></div>
                     <hr>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repudiandae quasi cupiditate molestias necessitatibus quibusdam ab eaque voluptatibus? Reiciendis facilis, dolore praesentium in distinctio quibusdam maiores. Ut non ipsum eius.</h3>
+                    <h3>Hardware yang saya gunakan : Led driver, led 170 - 230v, riley, dan eps32</h3>
                 </article>
                 <article>
                     <div class="icon"><i class="fa-brands fa-github"></i></div>
                     <hr>
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime esse, commodi eum blanditiis, consequatur hic unde harum expedita sed possimus tempora assumenda tempore perferendis laborum delectus quisquam reiciendis necessitatibus. Consectetur.</h3>
+                    <h3>Lupa nama git hub nya.</h3>
                 </article>
                 <article>
                     <div class="icon"><i class="fa-solid fa-video"></i></div>
                     <hr>
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero corrupti ipsum laboriosam molestiae sint aliquid nemo accusamus eum nisi culpa provident, autem, dignissimos fugit aperiam obcaecati sunt at quam eveniet.</h3>
+                    <h3>Live demo nya ada di ig aku..</h3>
                 </article>
             </div>
         </div>
@@ -60,7 +61,7 @@
             <div class="ibu">
         <div class="cloud2" style="z-index: -1; position: absolute; bottom: 160px; right: 301px;"><img src="Download_premium_png_of_White_frame_cloud_outdoors_weather__by_Pinn_about_cloud_png__cloud__smoke_png_frame__smoke_background_png_transparent__and_png_15438285-removebg-preview.png" alt=""></div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque distinctio cumque quas obcaecati ea recusandae deserunt magni natus amet, tenetur totam iusto. Fuga excepturi natus illum! Vero, voluptatum eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sunt aut alias officiis tenetur necessitatibus modi dolor porro ipsum veritatis eos, cum fugit numquam aliquid maxime voluptate repellendus repudiandae velit.</p>
+                <p>Pertama tama esp32 harus terkoneksi dengn akses point, atau biasa di sebut router. Setelah itu masukan alamat ip ke promt yang muncul saat anda pertama kali membuka web. cara kerja dari sistem ini diawali dengan request yang di picu oleh tombol on off dan sinyal request tersebut akan di kirim ke esp32 yang akan memicu LOW HIGH nya riley.</p>
             <figure >
                 <img src="cara-kerja-iot.png" alt="iot-image" height="500px" style="border-radius: 25px; border: 20px solid wheat;">
                 <figcaption>
@@ -68,34 +69,77 @@
                 </figcaption>
             </figure>
     </div>
-    <div class="main3">
+    <div class="main3" id="Controling">
             <h2 style="justify-self: center;">Controling</h2>
         <hr style="width: 800px; justify-self: center;">
             
             <br>
             <div class="conectivity">
-                <div class="status">Belum terhubung</div>
+                <center>
+                     <div class="status">Belum terhubung</div>
+                </center>
             </div>
-            <div class="tutor">
-                <h3>Cara menghunbungkan</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure repudiandae error explicabo cum possimus accusamus eos ducimus optio, commodi ut temporibus ipsa, deleniti, laborum blanditiis natus vero amet similique?</p>
-            </div>
+            
             <div class="container4">
-                <div class="item4"></div>
-                <div class="item4">
-                    <div class="foto_lampu"></div>
-                    <button class="on_off">Mati</button>
+                <div class="itemsss" id="on_off">
+                    <div class="fotooooo">
+                        <figure>
+                    <div class="led" id="lamppp1"><img src="Light_Bulb_Png_-_Transparent_Light_Bulb_PNG_Transparent_With_Clear_Background_ID_166931___TopPNG-removebg-preview.png" alt="" width="50px"></div>
+                    <figcaption style="margin-top:px; margin-left: -190px;">
+                        Lampu1
+                    </figcaption>
+                    <div class="led" id="lamppp2"><img src="Light_Bulb_Png_-_Transparent_Light_Bulb_PNG_Transparent_With_Clear_Background_ID_166931___TopPNG-removebg-preview.png" alt="" width="50px"></div>
+                    <figcaption style="margin-top:px; margin-left: -190px;">
+                        Lampu2
+                    </figcaption>
+                    <div class="led" id="lamppp3"><img src="Light_Bulb_Png_-_Transparent_Light_Bulb_PNG_Transparent_With_Clear_Background_ID_166931___TopPNG-removebg-preview.png" alt="" width="50px"></div>
+                    <figcaption style="margin-top:px; margin-left: -190px;">
+                        Lampu3
+                    </figcaption>
+                    </figure>
+                    </div>
+                    <hr>
+                    <div class="pilihan">
+                        <figure>
+                        <figcaption>Lampu 1</figcaption>
+                        <button class="on_off" id="on_off1" >OFF</button>
+                    </figure>
+                    <figure>
+                        <figcaption>Lampu 2</figcaption>
+                        <button class="on_off" id="on_off2" >OFF</button>
+                    </figure>
+                    <figure>
+                        <figcaption>Lampu 3</figcaption>
+                        <button class="on_off" id="on_off3">OFF</button>
+                    </figure>
+                    </div>
+                </div>
+                <div class="itemsss" id="cahaya" style="padding: 20px;">
+                    <div class="icon" style="margin-top: 20px; margin-bottom: 40px;"><i class="fa-solid fa-lightbulb"></i></div>
+                    <hr>
+                    <div class="sensor">
+                        <h4>Kadar cahaya : </h4>
+                        <p class="data">NonAktif</p>
+                    </div>
+                </div>
+                <div class="itemsss" id="otomisasi">
+                    <h4>Otomisasi mode</h4>
+                    <hr>
+                    <p>Cara kerja LDR (Light Dependent Resistor) terhadap LED didasarkan pada perubahan nilai resistansi akibat intensitas cahaya yang diterimanya. Saat kondisi gelap, nilai resistansi LDR akan menjadi sangat besar sehingga dapat memicu arus listrik mengalir ke transistor atau langsung ke LED (tergantung desain rangkaiannya) untuk membuat LED menyala; sebaliknya, saat terkena cahaya terang, resistansi LDR akan mengecil yang membuat arus terhambat atau teralihkan sehingga LED mati.</p>
+                    <button class="btn_otomisasi">turn on mode</button>
+                    <img class="ldr" src="Modulo_Sensor_De_Luz_Fotoresistor_Con_Ldr_Arduino-removebg-preview.png" alt="">
                 </div>
             </div>
         </div>
     <nav>
-        <ul>
+        <center>
+              <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="index2.html">Controling</a></li>
-            <li><a href="">Profile</a></li>
+            <li><a href="#Controling">Controling</a></li>
         </ul>
+        </center>
     </nav>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>

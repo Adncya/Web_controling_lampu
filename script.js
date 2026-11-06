@@ -11,7 +11,7 @@ const gambar3 = document.getElementById("lamppp3");
 const status2 = document.querySelector(".status");
 
 let ask = Number(prompt("Masukan alamat ip mikro kontoler anda"));
-if (ask !== null && ask !== 0) {
+if (ask !== NaN && ask !== 0) {
   const fix = "http://192.168.1.9/";
   alert("Alamat ip anda = " + ask);
   status2.textContent = "Terhubung";
